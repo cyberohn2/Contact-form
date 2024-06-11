@@ -15,6 +15,43 @@
   </style>
 </head>
 <body>
+  <div>
+    <h1>Contact Us</h1>
+    <form>
+      <fieldset>
+        <div class="form-input">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name"/>
+          <p class="err-msg"></p>
+        </div>
+        <div class="form-input">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name"/>
+          <p class="err-msg"></p>
+        </div>
+      </fieldset>
+
+      <div class="form-input">
+        <label for="email">Email</label>
+        <input type="mail" id="first-name" name="first-name"/>
+        <p class="err-msg"></p>
+      </div>
+
+      <fieldset>
+        <label class="field-label">Query Type</label>
+        <div class="form-input">
+          <input type="radio" id="general-enquiry" name="query-type"/>
+          <label for="general-enquiry">General Enquiry</label>
+          <p class="err-msg"></p>
+        </div>
+        <div class="form-input">
+          <input type="radio" id="support-request" name="query-type"/>
+          <label for="support-request">Support Request</label>
+          <p class="err-msg"></p>
+        </div>
+      </fieldset>
+    </form>
+  </div>
 
   Contact Us
 
