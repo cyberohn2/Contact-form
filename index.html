@@ -42,13 +42,17 @@
         <label class="field-label">Query Type</label>
         <div>
           <div class="form-input">
-            <input type="radio" id="general-enquiry" name="query-type"/>
-            <label for="general-enquiry">General Enquiry</label>
+            <div>
+              <input type="radio" id="general-enquiry" name="query-type"/>
+              <label for="general-enquiry">General Enquiry</label>
+            </div>
             <p class="err-msg"></p>
           </div>
           <div class="form-input">
-            <input type="radio" id="support-request" name="query-type"/>
-            <label for="support-request">Support Request</label>
+            <div>
+              <input type="radio" id="support-request" name="query-type"/>
+              <label for="support-request">Support Request</label>
+            </div>
             <p class="err-msg"></p>
           </div>
         </div>
@@ -59,8 +63,10 @@
         <p class="err-msg"></p>
       </div>
       <div class="form-input">
-        <input type="checkbox" name="consent" id="consent">
-        <label for="consent">I consent to being contacted by the team</label>
+        <div class="radio-group">
+          <input type="checkbox" name="consent" id="consent">
+          <label for="consent">I consent to being contacted by the team</label>
+        </div>
         <p class="err-msg"></p>
       </div>
       <input type="submit" value="Submit">
