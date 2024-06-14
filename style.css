@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --green-200: hsl(148, 38%, 91%);
+    --green-600: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 54%);
+    --grey-500: hsl(186, 15%, 59%);
+    --grey-900: hsl(186, 15%, 59%);
+
+    --fs: 16px;
+    --fwgt-400: 400;
+    --fwgt-700: 700;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green-200);
+    font-size: var(--fs);
+    font-family: "Karla", sans-serif;
+}
+.wrapper{
+    width: 500px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 5px 5px 5px rgba(112, 110, 110, 0.068);
+    padding: 1.25rem;
+}
+fieldset{
+    border: 0px;
+}
+fieldset:first-child, fieldset:nth-of-type(2) > div{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-top: .5rem;
+}
+fieldset > div, fieldset:nth-of-type(2) > div > div{
+    flex-basis: 50%;
+
+}
+fieldset:nth-of-type(2) > div > div{
+    border: 1px solid var(--grey-500);
+    padding: .5rem 1rem;
+    border-radius: 6px;
+}
+label:not(fieldset:nth-of-type(2) label, .form-input:last-of-type > label){
+    display: block;
+    margin-bottom: .5rem;
+    color: red;
+}
+label:not(fieldset:nth-of-type(2) label)::after{
+    content: ' *';
+    color: var(--green-600);
+}
+input:not(input[type="radio"], input[type='checkbox']), textarea{
+    border: 1px solid var(--grey-500);
+    border-radius: 6px;
+    padding: .5rem;
+    width: 100%;
+    font-size: 1rem;
+}
+input[type="radio"], input[type='checkbox']{
+    margin-right: .75rem;
+    border: 1px solid;
+}
+.form-input{
+    margin-bottom: 1.25rem;
+}
+.wrapper h1{
+    color: black;
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+input[type='submit']{
+    background-color: var(--green-600);
+    border: 0px;
+    font-family: "Karla", sans-serif;
+    font-weight: var(--fwgt-700);
+    color: white;
+    cursor: pointer;
+}
