@@ -9,7 +9,7 @@
   
   <title>Frontend Mentor | Contact form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -23,54 +23,54 @@
         <div class="form-input">
           <label for="first-name">First Name</label>
           <input type="text" id="first-name" name="first-name"/>
-          <p class="err-msg"></p>
+          <p class="error-message">This field is required!</p>
         </div>
         <div class="form-input">
           <label for="last-name">Last Name</label>
           <input type="text" id="last-name" name="last-name"/>
-          <p class="err-msg"></p>
+          <p class="error-message">This field is required!</p>
         </div>
       </fieldset>
 
       <div class="form-input">
         <label for="email">Email</label>
-        <input type="mail" id="first-name" name="first-name"/>
-        <p class="err-msg"></p>
+        <input type="email" id="email" name="email"/>
+        <p class="error-message">Please enter a valid email address</p>
       </div>
 
       <fieldset>
         <label class="field-label">Query Type</label>
         <div>
           <div class="form-input">
-            <div>
-              <input type="radio" id="general-enquiry" name="query-type"/>
+            <div class="radio-group">
+              <input type="radio" id="general-enquiry" name="query-type" value="general"/>
               <label for="general-enquiry">General Enquiry</label>
             </div>
-            <p class="err-msg"></p>
           </div>
           <div class="form-input">
-            <div>
-              <input type="radio" id="support-request" name="query-type"/>
+            <div class="radio-group">
+              <input type="radio" id="support-request" name="query-type" value="support"/>
               <label for="support-request">Support Request</label>
             </div>
-            <p class="err-msg"></p>
           </div>
         </div>
+        <p class="error-message">Please select a query type</p>
       </fieldset>
       <div class="form-input">
         <label for="message">Message</label>
         <textarea name="message" id="message"></textarea>
-        <p class="err-msg"></p>
+        <p class="error-message">This field is required!</p>
       </div>
       <div class="form-input">
-        <div class="radio-group">
+        <div class="checkbox-group">
           <input type="checkbox" name="consent" id="consent">
           <label for="consent">I consent to being contacted by the team</label>
         </div>
-        <p class="err-msg"></p>
+        <p class="error-message">To submit this form, please consent to being contacted</p>
       </div>
       <input type="submit" value="Submit">
     </form>
   </div>
+  <script src="./app.js"></script>
 </body>
 </html>
